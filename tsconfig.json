@@ -1,23 +1,30 @@
 {
   "compilerOptions": {
-    "module": "ES2015",
-    "esModuleInterop": true,
+    "module": "commonjs",
+    "lib": [
+      "es5",
+      "es2015",
+      "es6",
+      "dom"
+    ],
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
-    "target": "es5",
     "newLine": "lf",
     "noImplicitAny": true,
-    "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "build",
     "baseUrl": ".",
     "skipLibCheck": true,
-    "allowJs": true,
-    "strict": true,
-    "pretty": true,
-    "removeComments": true,
-    "typeRoots": ["./node_modules/@types", "./types"]
+     "target": "es2015",
+     "moduleResolution": "node",
+     "allowJs": true,
+     "strict": true,
+     "isolatedModules": true,
+     "esModuleInterop": true,
+     "pretty": true,
+     "removeComments": true,
+     "typeRoots": ["./node_modules/@types", "./types"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "src/__test__"]
