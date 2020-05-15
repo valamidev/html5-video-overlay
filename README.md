@@ -2,6 +2,11 @@
  
 Sport Buff Vide overlay plugin written in vanillaJS compatible with any HTML5 video player.
 
+#### Preview:
+
+![Preview](https://i.imgur.com/gv9CQmV.jpg)
+
+
 ### Install and Build:
 
 ``` 
