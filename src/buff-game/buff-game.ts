@@ -14,6 +14,7 @@ export class BuffGame {
   buffUpdateCount: number;
   buffInprogress: boolean;
   overlayInnerElement: ElementConfig;
+  questionOverlay?: BuffOverlay;
   constructor(config?: BuffGameConfig) {
     this.buffUpdateCount = 0;
     this.buffInprogress = false;
@@ -38,7 +39,11 @@ export class BuffGame {
 
       const questionData = (await this.getBuffQuestion(this.buffUpdateCount))?.result;
 
-      const questionOverlay = new BuffOverlay(this.overlayInnerElement, questionData);
+      if (!questionData) {
+        throw new Error('Empty question data!');
+      }
+
+      this.questionOverlay = new BuffOverlay(this.overlayInnerElement, questionData);
     } catch (err) {
       console.log(err);
     } finally {
