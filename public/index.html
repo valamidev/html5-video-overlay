@@ -7,27 +7,24 @@
     <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../src/assets/style.css" />
 
     <script src="../build-browser/index.js"></script>
 
-    <style>
-        .inner-container {
-          position: relative;
-        }
-        .video-overlay {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            margin: 10px;
-            padding: 5px 5px;
-            font-size: 20px;
-            font-family: Helvetica;
-            color: #FFF;
-            background-color: rgba(50, 50, 50, 0.3);
-            z-index: 300000;
-        }
-      </style>
+    <script>
+
+
+        window.onload = () => {
+
+
+
+          BuffVideo('#player');
+        };
+
+
+    </script>
+
+
 
   </head>
 
@@ -44,13 +41,13 @@
 
 
           <div>
-            <div class="inner-container">
-                <div class="video-overlay">Bug Buck Bunny - Trailer</div>
+        
+ 
             <video id="player" playsinline controls >
                 <source src="https://buffup-public.s3.eu-west-2.amazonaws.com/video/toronto+nba+cut+3.mp4" type="video/mp4" />
             
               </video>
-            </div>
+         
           </div>
 
 
