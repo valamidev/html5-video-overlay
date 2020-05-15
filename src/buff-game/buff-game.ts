@@ -1,8 +1,8 @@
 import { ajax } from 'rxjs/ajax';
 import { retry } from 'rxjs/operators';
 
-import { ElementConfig } from './types';
-import { FIRST_REQUEST_DELAY, DEFAULT_API_URI, DEFAULT_BUFF_INNER_OVERLAY } from './constants';
+import { ElementConfig } from '../types';
+import { FIRST_REQUEST_DELAY, DEFAULT_API_URI, DEFAULT_BUFF_INNER_OVERLAY, REQUEST_INTERVAL } from '../constants';
 import { BuffOverlay } from './buff-overlay';
 
 export interface BuffGameConfig {
@@ -25,6 +25,10 @@ export class BuffGame {
     setTimeout(async () => {
       await this.updateBuffGame();
     }, FIRST_REQUEST_DELAY);
+
+    setInterval(async () => {
+      await this.updateBuffGame();
+    }, REQUEST_INTERVAL);
   }
 
   async updateBuffGame(): Promise<void> {
