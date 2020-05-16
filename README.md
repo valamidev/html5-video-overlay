@@ -4,7 +4,7 @@ Sport Buff Vide overlay plugin written in vanillaJS compatible with any HTML5 vi
 
 #### Preview:
 
-![Preview](https://i.imgur.com/gv9CQmV.jpg)
+![Preview](https://i.imgur.com/2JwsZBJ.jpg)
 
 
 ### Install and Build:
@@ -44,4 +44,3 @@ You can init the BuffGame with adding the next code sample at the end of your pa
 - [ ] Build CSS into the bundle
 - [ ] More customization with configurations
 - [ ] Add E2E tests
-- [ ] Improve Overlay animations
