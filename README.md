@@ -9,8 +9,7 @@ Sport Buff Vide overlay plugin written in vanillaJS compatible with any HTML5 vi
 
 ### Install and Build:
 
-``` 
-
+```bash
 $ npm install && npm run build
 
 ```
@@ -19,8 +18,7 @@ $ npm install && npm run build
 
 Add the following Javascript and CSS file at the beginning your webpage.
 
-```
-
+```html
 <link rel="stylesheet" href="../src/assets/style.css" />
 <script src="../build-browser/index.js"></script>
 
@@ -28,8 +26,7 @@ Add the following Javascript and CSS file at the beginning your webpage.
 
 You can init the BuffGame with adding the next code sample at the end of your page:
 
-```
-
+```html
 <script>
     window.onload = () => {
         BuffVideo('#player', {}); // VideoPlayer elementID , OptionalConfigs
